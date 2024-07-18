@@ -5,11 +5,9 @@ namespace EdumindAkademia.Models
     public class DB : DbContext
     {
 
-        //1. percaktimi i Conn Stringut
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
-            optionsBuilder.UseSqlServer("Data Source=DESKTOP-PAMUBVM\\SQLEXPRESS;Database=eCommerceDB;User ID=sa;Password=sa;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False");
-            //optionsBuilder.UseLazyLoadingProxies();
-            
+        public DB(DbContextOptions<DB> context) : base(context)
+        {
+
         }
 
 

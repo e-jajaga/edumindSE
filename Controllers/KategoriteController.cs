@@ -6,19 +6,24 @@ namespace EdumindAkademia.Controllers
 {
     public class KategoriteController : Controller
     {
-        private static DB db = new DB();
+        private static DB _db;
+
+        public KategoriteController(DB db)
+        {
+            _db = db;
+        }
         // GET: KategoriteController
         public ActionResult Index()
         {
             List<Kategorite> lista = new List<Kategorite>();
-            lista = db.Kategorite.ToList();
+            lista = _db.Kategorite.ToList();
             return View(lista);
         }
 
         // GET: KategoriteController/Details/5
         public ActionResult Details(int id)
         {
-            var kat = db.Kategorite.Find(id);
+            var kat = _db.Kategorite.Find(id);
             return View(kat);
         }
 
@@ -35,8 +40,8 @@ namespace EdumindAkademia.Controllers
         {
             try
             {
-                db.Kategorite.Add(kategoria);
-                db.SaveChanges();
+                _db.Kategorite.Add(kategoria);
+                _db.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -48,7 +53,7 @@ namespace EdumindAkademia.Controllers
         // GET: KategoriteController/Edit/5
         public ActionResult Edit(int id)
         {
-            var katNeNdryshim = db.Kategorite.Find(id);
+            var katNeNdryshim = _db.Kategorite.Find(id);
             return View(katNeNdryshim);
         }
 
@@ -59,9 +64,9 @@ namespace EdumindAkademia.Controllers
         {
             try
             {
-                var katOrigjinale = db.Kategorite.Find(katNeNdryshim.Numri);
+                var katOrigjinale = _db.Kategorite.Find(katNeNdryshim.Numri);
                 katOrigjinale.Titulli = katNeNdryshim.Titulli;
-                db.SaveChanges();
+                _db.SaveChanges();
 
                 return RedirectToAction(nameof(Index));
             }
@@ -74,7 +79,7 @@ namespace EdumindAkademia.Controllers
         // GET: KategoriteController/Delete/5
         public ActionResult Delete(int id)
         {
-            var katNeFshirje = db.Kategorite.Find(id);
+            var katNeFshirje = _db.Kategorite.Find(id);
             return View(katNeFshirje);
         }
 
@@ -85,9 +90,9 @@ namespace EdumindAkademia.Controllers
         {
             try
             {
-                var katNeFshirje = db.Kategorite.Find(id);
-                db.Kategorite.Remove(katNeFshirje);
-                db.SaveChanges();
+                var katNeFshirje = _db.Kategorite.Find(id);
+                _db.Kategorite.Remove(katNeFshirje);
+                _db.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
             catch
