@@ -17,79 +17,79 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EdumindAkademia
 build_property.RootNamespace = EdumindAkademia
-build_property.ProjectDir = C:\Users\edumind24\source\repos\EdumindAkademia\
+build_property.ProjectDir = C:\Users\edumind24\Documents\edumindSE\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\edumind24\source\repos\EdumindAkademia
+build_property.MSBuildProjectDirectory = C:\Users\edumind24\Documents\edumindSE
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/edumind24/source/repos/EdumindAkademia/Views/Home/Index.cshtml]
+[C:/Users/edumind24/Documents/edumindSE/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumind24/source/repos/EdumindAkademia/Views/Home/Privacy.cshtml]
+[C:/Users/edumind24/Documents/edumindSE/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumind24/source/repos/EdumindAkademia/Views/Kategorite/Create.cshtml]
+[C:/Users/edumind24/Documents/edumindSE/Views/Kategorite/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcml0ZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumind24/source/repos/EdumindAkademia/Views/Kategorite/Delete.cshtml]
+[C:/Users/edumind24/Documents/edumindSE/Views/Kategorite/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcml0ZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumind24/source/repos/EdumindAkademia/Views/Kategorite/Details.cshtml]
+[C:/Users/edumind24/Documents/edumindSE/Views/Kategorite/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcml0ZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumind24/source/repos/EdumindAkademia/Views/Kategorite/Edit.cshtml]
+[C:/Users/edumind24/Documents/edumindSE/Views/Kategorite/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcml0ZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumind24/source/repos/EdumindAkademia/Views/Kategorite/Index.cshtml]
+[C:/Users/edumind24/Documents/edumindSE/Views/Kategorite/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcml0ZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumind24/source/repos/EdumindAkademia/Views/Produktet/Create.cshtml]
+[C:/Users/edumind24/Documents/edumindSE/Views/Produktet/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrdGV0XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumind24/source/repos/EdumindAkademia/Views/Produktet/Delete.cshtml]
+[C:/Users/edumind24/Documents/edumindSE/Views/Produktet/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrdGV0XERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumind24/source/repos/EdumindAkademia/Views/Produktet/Details.cshtml]
+[C:/Users/edumind24/Documents/edumindSE/Views/Produktet/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrdGV0XERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumind24/source/repos/EdumindAkademia/Views/Produktet/Edit.cshtml]
+[C:/Users/edumind24/Documents/edumindSE/Views/Produktet/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrdGV0XEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumind24/source/repos/EdumindAkademia/Views/Produktet/Index.cshtml]
+[C:/Users/edumind24/Documents/edumindSE/Views/Produktet/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrdGV0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumind24/source/repos/EdumindAkademia/Views/Shared/Error.cshtml]
+[C:/Users/edumind24/Documents/edumindSE/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumind24/source/repos/EdumindAkademia/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/edumind24/Documents/edumindSE/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumind24/source/repos/EdumindAkademia/Views/_ViewImports.cshtml]
+[C:/Users/edumind24/Documents/edumindSE/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumind24/source/repos/EdumindAkademia/Views/_ViewStart.cshtml]
+[C:/Users/edumind24/Documents/edumindSE/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumind24/source/repos/EdumindAkademia/Views/Shared/_Layout.cshtml]
+[C:/Users/edumind24/Documents/edumindSE/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-xqdp7t14jd

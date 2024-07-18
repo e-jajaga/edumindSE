@@ -7917,11 +7917,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\edumind24\\source\\repos\\EdumindAkademia\\EdumindAkademia.csproj",
+      "projectUniqueName": "C:\\Users\\edumind24\\Documents\\edumindSE\\EdumindAkademia.csproj",
       "projectName": "EdumindAkademia",
-      "projectPath": "C:\\Users\\edumind24\\source\\repos\\EdumindAkademia\\EdumindAkademia.csproj",
+      "projectPath": "C:\\Users\\edumind24\\Documents\\edumindSE\\EdumindAkademia.csproj",
       "packagesPath": "C:\\Users\\edumind24\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\edumind24\\source\\repos\\EdumindAkademia\\obj\\",
+      "outputPath": "C:\\Users\\edumind24\\Documents\\edumindSE\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\edumind24\\AppData\\Roaming\\NuGet\\NuGet.Config",
