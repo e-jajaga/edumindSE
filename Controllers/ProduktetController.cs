@@ -8,28 +8,32 @@ namespace EdumindAkademia.Controllers
 {
     public class ProduktetController : Controller
     {
-        private static DB db = new DB();
+        private static DB _db;
+        public ProduktetController(DB db)
+        {
+            _db = db;
+        }
 
         // GET: ProduktetController
         public ActionResult Index()
-        {   
-            List<Produktet> produktet = db.Produktet.ToList();
+        {
+            List<Produktet> produktet = _db.Produktet.ToList();
             return View(produktet);
         }
 
         // GET: ProduktetController/Details/5
         public ActionResult Details(int id)
         {
-            var produkti = db.Produktet
-                .Include(x=>x.Kategoria)
-                .Where(x=>x.Numri.Equals(id)).SingleOrDefault();
+            var produkti = _db.Produktet
+                .Include(x => x.Kategoria)
+                .Where(x => x.Numri.Equals(id)).SingleOrDefault();
             return View(produkti);
         }
 
         // GET: ProduktetController/Create
         public ActionResult Create()
         {
-            var kategorite = db.Kategorite.ToList();
+            var kategorite = _db.Kategorite.ToList();
             var kat_sel_list = new SelectList(kategorite, "Numri", "Titulli");
             ViewBag.kategorite = kat_sel_list;
             //int x = 3; ViewBag.x = x;
@@ -42,8 +46,8 @@ namespace EdumindAkademia.Controllers
         public ActionResult Create(Produktet newProdukt)
         {
             //newProdukt.Kategoria.Titulli
-            db.Produktet.Add(newProdukt);
-            db.SaveChanges();
+            _db.Produktet.Add(newProdukt);
+            _db.SaveChanges();
             return RedirectToAction("Index");
         }
 
@@ -51,9 +55,9 @@ namespace EdumindAkademia.Controllers
         public ActionResult Edit(int id)
         {
             //LINQ
-            var produktiNeModifikim = db.Produktet.Find(id);
+            var produktiNeModifikim = _db.Produktet.Find(id);
 
-            var kategorite = db.Kategorite.ToList();
+            var kategorite = _db.Kategorite.ToList();
             var kat_sel_list = new SelectList(kategorite, "Numri", "Titulli", produktiNeModifikim.KategoriaNumri);
             ViewBag.kategorite = kat_sel_list;
             //Produktet newProdukt = new Produktet();
@@ -74,15 +78,16 @@ namespace EdumindAkademia.Controllers
         {
             try
             {
-                var produktiExisting = db.Produktet.Find(produktiNewData.Numri);
+                var produktiExisting = _db.Produktet.Find(produktiNewData.Numri);
                 if (produktiExisting != null)
                 {
                     produktiExisting.Emri = produktiNewData.Emri;
                     produktiExisting.KategoriaNumri = produktiNewData.KategoriaNumri;
-                    db.SaveChanges();
-                } else 
-                { 
-                    return View(); 
+                    _db.SaveChanges();
+                }
+                else
+                {
+                    return View();
                 }
                 return RedirectToAction(nameof(Index));
             }
@@ -96,7 +101,7 @@ namespace EdumindAkademia.Controllers
         [HttpGet]
         public ActionResult Delete(int id)
         {
-            var produktiNeFshirje = db.Produktet.Find(id);
+            var produktiNeFshirje = _db.Produktet.Find(id);
 
             return View(produktiNeFshirje);
         }
@@ -108,11 +113,11 @@ namespace EdumindAkademia.Controllers
         {
             try
             {
-                var produktiNeFshirje = db.Produktet.Find(p.Numri);
+                var produktiNeFshirje = _db.Produktet.Find(p.Numri);
                 if (produktiNeFshirje != null)
                 {
-                    db.Produktet.Remove(produktiNeFshirje);
-                    db.SaveChanges();
+                    _db.Produktet.Remove(produktiNeFshirje);
+                    _db.SaveChanges();
                 }
                 return RedirectToAction(nameof(Index));
             }
