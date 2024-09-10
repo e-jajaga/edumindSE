@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EdumindAkademia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f8ff9d238fe3838f04e0c5a18b37af7530e6382")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ced0dc553605352f9d48b7fd5d924282c44b1a5")]
 [assembly: System.Reflection.AssemblyProductAttribute("EdumindAkademia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EdumindAkademia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
