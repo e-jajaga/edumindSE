@@ -7,15 +7,18 @@ namespace EdumindAkademia.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private static DB _db;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, DB db)
         {
             _logger = logger;
+            _db = db;   //dependency injection design pattern
         }
 
         public IActionResult Index()
         {
-            return View();
+            var produktetFundit = _db.Produktet.Take(9).ToList();
+            return View(produktetFundit);
         }
 
         public IActionResult Privacy()
