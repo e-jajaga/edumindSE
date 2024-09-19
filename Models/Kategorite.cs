@@ -7,6 +7,7 @@ namespace EdumindAkademia.Models
     {
         [Key]
         public int Numri { get; set; }
+
         [DisplayName("Titulli i Kategorise"), Required]
         public String Titulli { get; set; }
 

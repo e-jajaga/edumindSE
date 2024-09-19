@@ -31,12 +31,18 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Kategorite" asp-action="Index">Kategorite</a>
                         </li>
+
                     </ul>
                 </div>
             </div>
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Shporta" asp-action="Index">Shporta(<span id="shporta"></span>)</a>
+                </li>
+            </ul>
         </nav>
     </header>
-  
+
     <div class="container">
         <h2>Titulli i faqes</h2>
         <main role="main" class="pb-3">
@@ -52,6 +58,15 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script> 
+        $(document).ready(function () {
+            var shporta = $("#shporta").text();
+            if(shporta == undefined || shporta == null)
+                $("#shporta").text("0");
+        });
+
+        
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

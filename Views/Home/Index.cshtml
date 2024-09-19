@@ -14,22 +14,22 @@
                 {
                     if (i == 3 || i == 6) 
                     {
-                            @:<div class="row" style="padding-bottom: 20px;">
+                                @:<div class="row" style="padding-bottom: 20px;">
                     }
         
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">@item.Emri</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn btn-primary" onclick="displayMsg('@item.Emri')">+ Shporte</a>
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a href="Home/ProductDetails/@item.Numri">@item.Emri</a></h5>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <a href="#" class="btn btn-primary" onclick="incrementCart()">+ Shporte</a>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>    
+                            </div>    
         
                     if (i == 2 || i == 5) 
                     {
-                            @:</div>
+                                @:</div>
                     }
         
                     i++;
@@ -42,9 +42,16 @@
 <script>
     var container = document.getElementsByClassName("container");
 
-    function displayMsg(titulli) { 
-        alert("Produkti " + titulli + " u shtua ne shporte");
-    }
+    // function displayMsg(titulli) { 
+    //     alert("Produkti " + titulli + " u shtua ne shporte");
+    // }
+
+    function incrementCart() { 
+            var shporta = $("#shporta").text();
+        if (shporta == "") shporta = 0;
+            var shto = parseInt(shporta) + 1;
+            $("#shporta").text(shto);
+        }
 
 </script>
 <!-- Add Font Awesome CDN -->

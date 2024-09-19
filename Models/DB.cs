@@ -14,6 +14,7 @@ namespace EdumindAkademia.Models
         //2. percaktimi i modeleve qe do te jene tabela ne DB
         public DbSet<Produktet> Produktet { get; set; }
         public DbSet<Kategorite> Kategorite { get; set; }
+        public DbSet<Komentet> Komentet { get; set; }
 
     }
 }

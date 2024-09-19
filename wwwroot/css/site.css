@@ -19,9 +19,9 @@ html {
 
 body {
   margin-bottom: 60px;
-  background-color: grey;
+  background-color: lightgrey;
 }
 
-nav {
-    background-color: darkgrey;
+nav, footer {
+    background-color: grey;
 }

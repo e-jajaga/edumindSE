@@ -10,11 +10,11 @@ namespace EdumindAkademia.Models
         public int Numri { get; set; }
         
         public String Emri { get; set; }
-        //public List<Kategorite> Kategorite { get; set; }
         
         [ForeignKey("Kategoria"), DisplayName("Kategoria")]
         public int? KategoriaNumri { get; set; }
         public virtual Kategorite Kategoria { get; set; }
+        public List<Komentet> Komentet { get; set; }
 
     }
 }

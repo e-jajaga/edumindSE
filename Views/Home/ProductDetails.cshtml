@@ -1,0 +1,51 @@
+﻿@model Produktet
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+<div>
+    <a asp-action="Index">Back to Home Page</a>
+</div>
+<div>
+    <h4>Produktet</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Numri)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Numri)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Emri)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Emri)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Kategoria.Titulli)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Kategoria.Titulli)
+        </dd>
+    </dl>
+
+    <div class="row">
+        <div class="col-3"><input type="text" id="commentTxt" placeholder="Shto komentin tend" /></div>
+        <div class="col-2"><input type="button" value="Regjistro" onclick="shtoKomentin(@Model.Numri)" /></div>
+    </div>
+    <div id="komentet">
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        console.log("This is custom JavaScript for the Home page.");
+        $(document).ready(function () {
+            $("#komentet").load("/Home/GetKomentet?NumriProduktit=@Model.Numri")
+        });
+    
+    </script>
+}
