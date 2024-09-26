@@ -42,10 +42,11 @@ namespace EdumindAkademia.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public ActionResult<List<Komentet>> GetKomentet(int NumriProduktit)
+        public IActionResult GetKomentet(int NumriProduktit)
         {
             //partial view
-            return _db.Komentet.Where(x=> x.NumriProduktit == NumriProduktit && x.Eaprovuar == true).ToList();
+            var komentet = _db.Komentet.Where(x=> x.NumriProduktit == NumriProduktit && x.Eaprovuar == true).ToList();
+            return PartialView("_ListComments", komentet);
         }
     }
 }

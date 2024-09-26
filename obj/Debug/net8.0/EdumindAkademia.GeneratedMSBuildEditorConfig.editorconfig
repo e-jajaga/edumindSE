@@ -38,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0RGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/edumind24/Documents/edumindSE/Views/Home/_ListComments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfTGlzdENvbW1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/edumind24/Documents/edumindSE/Views/Kategorite/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcml0ZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -56,6 +60,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/edumind24/Documents/edumindSE/Views/Kategorite/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcml0ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edumind24/Documents/edumindSE/Views/Komentet/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29tZW50ZXRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edumind24/Documents/edumindSE/Views/Komentet/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29tZW50ZXRcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edumind24/Documents/edumindSE/Views/Komentet/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29tZW50ZXRcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edumind24/Documents/edumindSE/Views/Komentet/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29tZW50ZXRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edumind24/Documents/edumindSE/Views/Komentet/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29tZW50ZXRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/edumind24/Documents/edumindSE/Views/Produktet/Create.cshtml]
