@@ -36,6 +36,7 @@
         <div class="col-3"><input type="text" id="commentTxt" placeholder="Shto komentin tend" /></div>
         <div class="col-2"><input type="button" value="Regjistro" onclick="shtoKomentin(@Model.Numri)" /></div>
     </div>
+    <h5>Komentet</h5>
     <div id="komentet">
     </div>
 </div>
@@ -43,9 +44,35 @@
 @section Scripts {
     <script>
         console.log("This is custom JavaScript for the Home page.");
-        $(document).ready(function () {
+        $(document).ready(function() {
             $("#komentet").load("/Home/GetKomentet?NumriProduktit=@Model.Numri")
         });
+
+        function shtoKomentin(id)
+        {
+            var tekstiKomentit = $("#commentTxt").val();
+            $.ajax({
+                url: '/Komentet/Create',    // URL of the API endpoint
+                type: 'POST',                 // HTTP method (GET, POST, PUT, DELETE, etc.)
+                dataType: 'json',            // Expected data format (json, html, xml, text, etc.)
+                data: {                      // Data to be sent to the server (optional)
+                    txtKomenti: tekstiKomentit,
+                    numriProduktit: id
+                },  
+                success: function (response) {   // Success callback function
+                    console.log('Success:', response);
+                    // reload list of comments
+                    $("#komentet").load("/Home/GetKomentet?NumriProduktit=@Model.Numri");
+                    $("#commentTxt").val('');
+                },
+                error: function (xhr, status, error) {   // Error callback function
+                    console.error('Error:', error);
+                    // Handle error
+                    alert("Gabim gjate insertimit te komentit!");
+                }
+            });
+
+        }
     
     </script>
 }

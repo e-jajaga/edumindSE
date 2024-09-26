@@ -1,0 +1,53 @@
+﻿@model IEnumerable<EdumindAkademia.Models.Komentet>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Komenti)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Eaprovuar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataKrijimit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Produktet)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Komenti)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Eaprovuar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataKrijimit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Produktet.Numri)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Numri">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Numri">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Numri">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
