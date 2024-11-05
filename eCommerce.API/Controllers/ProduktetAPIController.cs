@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using eCommerce.BLL.IServices;
 using eCommerce.Domain.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace eCommerce.BLL.API
@@ -12,16 +8,19 @@ namespace eCommerce.BLL.API
     [ApiController]
     public class ProduktetAPIController : ControllerBase
     {
-        public ProduktetAPIController()
+        private IProduktetService _produktetService;
+        public ProduktetAPIController(IProduktetService produktetService)
         {
+            _produktetService = produktetService;
             //_context = context;
         }
 
         // GET: api/ProduktetAPI
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Produktet>>> GetProduktet()
+        public async Task<IEnumerable<Produktet>> GetProduktet()
         {
-            return new List<Produktet>();
+
+            return await _produktetService.GetProduktet();
         }
 
         

@@ -1,4 +1,5 @@
-﻿using eCommerce.BLL.IServices;
+﻿using eCommerce.BLL.IRepositories;
+using eCommerce.BLL.IServices;
 using eCommerce.Domain.Models;
 using System;
 using System.Collections.Generic;
@@ -10,12 +11,17 @@ namespace eCommerce.BLL.Services
 {
     public class ProduktetService : IProduktetService
     {
+        private IProduktetRepository _produktetRepository;
         //inject repo
+        public ProduktetService(IProduktetRepository produktetRepository)
+        {
+            _produktetRepository = produktetRepository;
+        }
         public async Task<IEnumerable<Produktet>> GetProduktet()
         {
             //repo
-            //return await _context.Produktet.ToListAsync();
-            return null;
+            return await _produktetRepository.GetProduktet();
+            //return new List<Produktet>();
         }
     }
 }

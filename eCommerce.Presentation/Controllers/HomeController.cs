@@ -23,19 +23,8 @@ namespace EdumindAkademia.Controllers
 
         public IActionResult Index()
         {
-            var url = _configuration["WeatherForecastAPI"] + "/WeatherForecast";
-            HttpClient client = new HttpClient();
-            //client.BaseAddress = new Uri(url);
-            var response = client.GetAsync(url).Result;
-
-            if (response.IsSuccessStatusCode)
-            {
-                string resultJsonString = response.Content.ReadAsStringAsync().Result;
-                List<WeatherForecastVM> result = JsonConvert.DeserializeObject<List<WeatherForecastVM>>(resultJsonString);
-                return PartialView("_WeatherForecast", result);
-            }
-
-            return null;
+            var produktet = _db.Produktet.Take(9).ToList();
+            return View(produktet);
         }
 
         // GET: ProduktetController/Details/5

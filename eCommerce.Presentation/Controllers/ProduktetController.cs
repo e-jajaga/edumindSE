@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
+using System.Text.Json;
 
 namespace EdumindAkademia.Controllers
 {
@@ -15,10 +17,30 @@ namespace EdumindAkademia.Controllers
         }
 
         // GET: ProduktetController
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
-            List<Produktet> produktet = _db.Produktet.ToList();
-            return View(produktet);
+            HttpClient client = new HttpClient();
+
+            var response =  await client.GetAsync("https://localhost:7238/api/ProduktetAPI");
+            if (response.IsSuccessStatusCode)
+            {
+                // Read the content as a string
+                var jsonString = await response.Content.ReadAsStringAsync();
+
+                // Deserialize the JSON string to a C# object
+                //var produktet = JsonSerializer.Deserialize<List<Produktet>>(jsonString);
+                // Or if using Newtonsoft.Json
+                var produktet = JsonConvert.DeserializeObject<List<Produktet>>(jsonString);
+
+                // Now you can work with the `produktet` object
+                return View(produktet);
+            }
+            else
+            {
+                // Handle the error response
+                throw new Exception($"Error: {response.StatusCode}");
+            }
+            
         }
 
         // GET: ProduktetController/Details/5
