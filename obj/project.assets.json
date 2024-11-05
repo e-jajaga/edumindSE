@@ -7798,9 +7798,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\edumind24\\Documents\\edumindSE\\EdumindAkademia.csproj",
-      "projectName": "EdumindAkademia",
-      "projectPath": "C:\\Users\\edumind24\\Documents\\edumindSE\\EdumindAkademia.csproj",
+      "projectUniqueName": "C:\\Users\\edumind24\\Documents\\edumindSE\\eCommerce.Presentation.csproj",
+      "projectName": "eCommerce.Presentation",
+      "projectPath": "C:\\Users\\edumind24\\Documents\\edumindSE\\eCommerce.Presentation.csproj",
       "packagesPath": "C:\\Users\\edumind24\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\edumind24\\Documents\\edumindSE\\obj\\",
       "projectStyle": "PackageReference",
