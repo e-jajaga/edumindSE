@@ -1,6 +1,4 @@
 using eCommerce.API;
-using eCommerce.BLL.IServices;
-using eCommerce.BLL.Services;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using eCommerce.Infrastructure.Data;

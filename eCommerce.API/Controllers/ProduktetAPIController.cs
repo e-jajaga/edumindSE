@@ -1,4 +1,4 @@
-﻿using eCommerce.BLL.IServices;
+﻿using eCommerce.Domain.IServices;
 using eCommerce.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 

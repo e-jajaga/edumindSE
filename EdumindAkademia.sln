@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eCommerce.MVC", "eCommerce.Presentation\eCommerce.MVC.csproj", "{E4C59D56-E337-4EBD-946F-C5A41A6289E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eCommerce.Presentation", "eCommerce.Presentation\eCommerce.Presentation.csproj", "{E4C59D56-E337-4EBD-946F-C5A41A6289E3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eCommerce.API", "eCommerce.API\eCommerce.API.csproj", "{39D9FF54-BD0F-4E26-88BE-3C0D26EF0B98}"
 EndProject

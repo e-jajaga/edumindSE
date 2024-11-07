@@ -1,6 +1,6 @@
-﻿using eCommerce.BLL.IRepositories;
-using eCommerce.BLL.IServices;
-using eCommerce.BLL.Services;
+﻿using eCommerce.BLL.Services;
+using eCommerce.Domain.IRepositories;
+using eCommerce.Domain.IServices;
 using eCommerce.Infrastructure.Repositories;
 
 namespace eCommerce.API

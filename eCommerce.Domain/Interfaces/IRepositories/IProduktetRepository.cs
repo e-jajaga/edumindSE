@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace eCommerce.BLL.IRepositories
+namespace eCommerce.Domain.IRepositories
 {
     public interface IProduktetRepository
     {
