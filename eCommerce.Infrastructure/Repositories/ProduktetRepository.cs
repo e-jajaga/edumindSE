@@ -1,4 +1,4 @@
-﻿using eCommerce.BLL.IRepositories;
+﻿using eCommerce.Domain.IRepositories;
 using eCommerce.Domain.Models;
 using eCommerce.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;

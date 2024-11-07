@@ -1,5 +1,5 @@
-﻿using eCommerce.BLL.IRepositories;
-using eCommerce.BLL.IServices;
+﻿using eCommerce.Domain.IRepositories;
+using eCommerce.Domain.IServices;
 using eCommerce.Domain.Models;
 using System;
 using System.Collections.Generic;

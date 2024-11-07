@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System.Diagnostics;
-using EdumindAkademia.ViewModels;
 using System.Configuration;
 
 namespace EdumindAkademia.Controllers
@@ -54,24 +53,6 @@ namespace EdumindAkademia.Controllers
             return PartialView("_ListComments", komentet);
         }
 
-        #region WeatherForecast
-        public IActionResult GetWeatherForecast()
-        {
-            var url = _configuration["WeatherForecastAPI"] + "/WeatherForecast";
-            HttpClient client = new HttpClient();
-            //client.BaseAddress = new Uri(url);
-            var response = client.GetAsync(url).Result;
-
-            if (response.IsSuccessStatusCode)
-            {
-                string resultJsonString = response.Content.ReadAsStringAsync().Result;
-                List<WeatherForecastVM> result = JsonConvert.DeserializeObject<List<WeatherForecastVM>>(resultJsonString);
-                return PartialView("_WeatherForecast", result);
-            }
-
-            return null;
-        }
-
-        #endregion
+        
     }
 }

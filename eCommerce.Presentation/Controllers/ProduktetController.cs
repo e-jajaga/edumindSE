@@ -30,7 +30,7 @@ namespace EdumindAkademia.Controllers
                 // Deserialize the JSON string to a C# object
                 //var produktet = JsonSerializer.Deserialize<List<Produktet>>(jsonString);
                 // Or if using Newtonsoft.Json
-                var produktet = JsonConvert.DeserializeObject<List<Produktet>>(jsonString);
+                var produktet = JsonConvert.DeserializeObject<List<ProduktetViewModel>>(jsonString);
 
                 // Now you can work with the `produktet` object
                 return View(produktet);

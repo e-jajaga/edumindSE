@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace eCommerce.BLL.IServices
+namespace eCommerce.Domain.IServices
 {
     public interface IProduktetService
     {
