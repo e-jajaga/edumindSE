@@ -1,14 +1,12 @@
-﻿using System.ComponentModel;
+﻿using eCommerce.Domain.Entities;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace eCommerce.Domain.Models
 {
-    public class Produktet
+    public class Produktet : BaseClass
     {
-        [Key]
-        public int Numri { get; set; }
-        
         public String Emri { get; set; }
         
         [ForeignKey("Kategoria"), DisplayName("Kategoria")]

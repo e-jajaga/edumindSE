@@ -20,7 +20,7 @@ namespace eCommerce.BLL.Services
         public async Task<IEnumerable<Produktet>> GetProduktet()
         {
             //repo
-            return await _produktetRepository.GetProduktet();
+            return await _produktetRepository.GetAllAsync();
             //return new List<Produktet>();
         }
     }

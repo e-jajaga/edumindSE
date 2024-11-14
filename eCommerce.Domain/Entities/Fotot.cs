@@ -1,8 +1,9 @@
-﻿namespace eCommerce.Domain.Models
+﻿using eCommerce.Domain.Entities;
+
+namespace eCommerce.Domain.Models
 {
-    public class Foto
+    public class Foto : BaseClass
     {
-        public int Numri { get; set; }
         public string EmriFajllit { get; set; }
     }
 }
