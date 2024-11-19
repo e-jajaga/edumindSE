@@ -13,6 +13,14 @@ namespace eCommerce.Infrastructure.Repositories
     
     public class ProduktetRepository : GenericRepository<Produktet>, IProduktetRepository
     {
-        public ProduktetRepository(DbContext context) : base(context) { }
+        private DB _context;
+        public ProduktetRepository(DB context) : base(context) {
+            _context = context;
+        }
+
+        public void AddProductReview(string comment)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

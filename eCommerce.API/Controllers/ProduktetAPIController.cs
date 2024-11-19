@@ -1,4 +1,5 @@
-﻿using eCommerce.Domain.IServices;
+﻿using eCommerce.Domain.Interfaces.IModels.IResponseModels;
+using eCommerce.Domain.IServices;
 using eCommerce.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,7 +18,7 @@ namespace eCommerce.BLL.API
 
         // GET: api/ProduktetAPI
         [HttpGet]
-        public async Task<IEnumerable<Produktet>> GetProduktet()
+        public async Task<IEnumerable<IResponseModels>> GetProduktet()
         {
 
             return await _produktetService.GetProduktet();

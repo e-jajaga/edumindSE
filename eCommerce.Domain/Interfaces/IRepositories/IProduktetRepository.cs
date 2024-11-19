@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 
 namespace eCommerce.Domain.IRepositories
 {
-    public interface IProduktetRepository : IGenericRepository<Produktet> { 
-    
+    public interface IProduktetRepository : IGenericRepository<Produktet> {
+
+        public void AddProductReview(string comment);
     }
 
 }
