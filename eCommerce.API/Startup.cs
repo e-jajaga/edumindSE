@@ -15,6 +15,9 @@ namespace eCommerce.API
         }
         public void ConfigureServices(IServiceCollection services)
         {
+            // Register GenericRepository as the implementation of IGenericRepository
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
             //services
             services.AddScoped<IProduktetService, ProduktetService>();
 

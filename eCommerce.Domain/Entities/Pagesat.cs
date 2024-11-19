@@ -1,8 +1,9 @@
-﻿namespace eCommerce.Domain.Models
+﻿using eCommerce.Domain.Entities;
+
+namespace eCommerce.Domain.Models
 {
-    public class Pagesat
+    public class Pagesat : BaseClass
     {
-        public int Numri { get; set; }
         public int NumriPorosise { get; set; }
         public DateTime DataPageses { get; set; }
         public double Cmimi { get; set; }

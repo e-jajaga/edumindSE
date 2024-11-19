@@ -533,3 +533,5 @@ C:\Users\edumind24\Documents\edumindSE\eCommerce.API\obj\Debug\net8.0\refint\eCo
 C:\Users\edumind24\Documents\edumindSE\eCommerce.API\obj\Debug\net8.0\eCommerce.API.pdb
 C:\Users\edumind24\Documents\edumindSE\eCommerce.API\obj\Debug\net8.0\eCommerce.API.genruntimeconfig.cache
 C:\Users\edumind24\Documents\edumindSE\eCommerce.API\obj\Debug\net8.0\ref\eCommerce.API.dll
+C:\Users\edumind24\Documents\edumindSE\eCommerce.API\obj\Debug\net8.0\eCommerce.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\edumind24\Documents\edumindSE\eCommerce.API\bin\Debug\net8.0\AutoMapper.dll

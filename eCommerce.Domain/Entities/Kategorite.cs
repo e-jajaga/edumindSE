@@ -1,13 +1,11 @@
-﻿using System.ComponentModel;
+﻿using eCommerce.Domain.Entities;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace eCommerce.Domain.Models
 {
-    public class Kategorite
+    public class Kategorite : BaseClass
     {
-        [Key]
-        public int Numri { get; set; }
-
         [DisplayName("Titulli i Kategorise"), Required]
         public String Titulli { get; set; }
 

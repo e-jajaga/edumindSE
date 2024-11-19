@@ -11,17 +11,16 @@ using System.Threading.Tasks;
 namespace eCommerce.Infrastructure.Repositories
 {
     
-    public class ProduktetRepository : IProduktetRepository
+    public class ProduktetRepository : GenericRepository<Produktet>, IProduktetRepository
     {
-        private static DB _db;
-        public ProduktetRepository(DB db)
-        {
-            _db = db;
+        private DB _context;
+        public ProduktetRepository(DB context) : base(context) {
+            _context = context;
         }
-        public async Task<IEnumerable<Produktet>> GetProduktet()
+
+        public void AddProductReview(string comment)
         {
-            //repo
-            return await _db.Produktet.ToListAsync();
+            throw new NotImplementedException();
         }
     }
 }

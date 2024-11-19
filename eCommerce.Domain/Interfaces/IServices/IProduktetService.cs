@@ -1,4 +1,5 @@
-﻿using eCommerce.Domain.Models;
+﻿using eCommerce.Domain.Interfaces.IModels.IResponseModels;
+using eCommerce.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace eCommerce.Domain.IServices
 {
     public interface IProduktetService
     {
-        public Task<IEnumerable<Produktet>> GetProduktet();
+        public Task<IEnumerable<IResponseModels>> GetProduktet();
     }
 }
