@@ -10,3 +10,15 @@ C:\Users\edumind24\Documents\edumindSE\eCommerce.Domain\obj\Debug\net8.0\eCommer
 C:\Users\edumind24\Documents\edumindSE\eCommerce.Domain\obj\Debug\net8.0\refint\eCommerce.Domain.dll
 C:\Users\edumind24\Documents\edumindSE\eCommerce.Domain\obj\Debug\net8.0\eCommerce.Domain.pdb
 C:\Users\edumind24\Documents\edumindSE\eCommerce.Domain\obj\Debug\net8.0\ref\eCommerce.Domain.dll
+C:\Users\edumind\Source\Repos\edumindSE\eCommerce.Domain\bin\Debug\net8.0\eCommerce.Domain.deps.json
+C:\Users\edumind\Source\Repos\edumindSE\eCommerce.Domain\bin\Debug\net8.0\eCommerce.Domain.dll
+C:\Users\edumind\Source\Repos\edumindSE\eCommerce.Domain\bin\Debug\net8.0\eCommerce.Domain.pdb
+C:\Users\edumind\Source\Repos\edumindSE\eCommerce.Domain\obj\Debug\net8.0\eCommerce.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edumind\Source\Repos\edumindSE\eCommerce.Domain\obj\Debug\net8.0\eCommerce.Domain.AssemblyInfoInputs.cache
+C:\Users\edumind\Source\Repos\edumindSE\eCommerce.Domain\obj\Debug\net8.0\eCommerce.Domain.AssemblyInfo.cs
+C:\Users\edumind\Source\Repos\edumindSE\eCommerce.Domain\obj\Debug\net8.0\eCommerce.Domain.csproj.CoreCompileInputs.cache
+C:\Users\edumind\Source\Repos\edumindSE\eCommerce.Domain\obj\Debug\net8.0\eCommerce.Domain.sourcelink.json
+C:\Users\edumind\Source\Repos\edumindSE\eCommerce.Domain\obj\Debug\net8.0\eCommerce.Domain.dll
+C:\Users\edumind\Source\Repos\edumindSE\eCommerce.Domain\obj\Debug\net8.0\refint\eCommerce.Domain.dll
+C:\Users\edumind\Source\Repos\edumindSE\eCommerce.Domain\obj\Debug\net8.0\eCommerce.Domain.pdb
+C:\Users\edumind\Source\Repos\edumindSE\eCommerce.Domain\obj\Debug\net8.0\ref\eCommerce.Domain.dll

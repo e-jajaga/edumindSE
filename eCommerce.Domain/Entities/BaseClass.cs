@@ -12,9 +12,9 @@ namespace eCommerce.Domain.Entities
     {
         [Key]
         public int Numri { get; set; }
-        public DateTime KrijuarMe { get; set; }
-        public String KrijuarNga { get; set; }
-        public DateTime PerditesuarMe { get; set; }
-        public String PerditesuarNga { get; set; }
+        public DateTime KrijuarMe { get; set; } = DateTime.Now;
+        public String KrijuarNga { get; set; } = String.Empty;
+        public DateTime PerditesuarMe { get; set; } = DateTime.Now;
+        public String PerditesuarNga { get; set; } = String.Empty;
     }
 }

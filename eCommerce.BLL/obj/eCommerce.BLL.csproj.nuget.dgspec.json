@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\edumind24\\Documents\\edumindSE\\eCommerce.BLL\\eCommerce.BLL.csproj": {}
+    "C:\\Users\\edumind\\Source\\Repos\\edumindSE\\eCommerce.BLL\\eCommerce.BLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\edumind24\\Documents\\edumindSE\\eCommerce.BLL\\eCommerce.BLL.csproj": {
+    "C:\\Users\\edumind\\Source\\Repos\\edumindSE\\eCommerce.BLL\\eCommerce.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edumind24\\Documents\\edumindSE\\eCommerce.BLL\\eCommerce.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\edumind\\Source\\Repos\\edumindSE\\eCommerce.BLL\\eCommerce.BLL.csproj",
         "projectName": "eCommerce.BLL",
-        "projectPath": "C:\\Users\\edumind24\\Documents\\edumindSE\\eCommerce.BLL\\eCommerce.BLL.csproj",
-        "packagesPath": "C:\\Users\\edumind24\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edumind24\\Documents\\edumindSE\\eCommerce.BLL\\obj\\",
+        "projectPath": "C:\\Users\\edumind\\Source\\Repos\\edumindSE\\eCommerce.BLL\\eCommerce.BLL.csproj",
+        "packagesPath": "C:\\Users\\edumind\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\edumind\\Source\\Repos\\edumindSE\\eCommerce.BLL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\edumind24\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\edumind\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,15 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\edumind24\\Documents\\edumindSE\\eCommerce.Domain\\eCommerce.Domain.csproj": {
-                "projectPath": "C:\\Users\\edumind24\\Documents\\edumindSE\\eCommerce.Domain\\eCommerce.Domain.csproj"
+              "C:\\Users\\edumind\\Source\\Repos\\edumindSE\\eCommerce.Domain\\eCommerce.Domain.csproj": {
+                "projectPath": "C:\\Users\\edumind\\Source\\Repos\\edumindSE\\eCommerce.Domain\\eCommerce.Domain.csproj"
               }
             }
           }
@@ -44,7 +47,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -75,21 +79,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\edumind24\\Documents\\edumindSE\\eCommerce.Domain\\eCommerce.Domain.csproj": {
+    "C:\\Users\\edumind\\Source\\Repos\\edumindSE\\eCommerce.Domain\\eCommerce.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edumind24\\Documents\\edumindSE\\eCommerce.Domain\\eCommerce.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\edumind\\Source\\Repos\\edumindSE\\eCommerce.Domain\\eCommerce.Domain.csproj",
         "projectName": "eCommerce.Domain",
-        "projectPath": "C:\\Users\\edumind24\\Documents\\edumindSE\\eCommerce.Domain\\eCommerce.Domain.csproj",
-        "packagesPath": "C:\\Users\\edumind24\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edumind24\\Documents\\edumindSE\\eCommerce.Domain\\obj\\",
+        "projectPath": "C:\\Users\\edumind\\Source\\Repos\\edumindSE\\eCommerce.Domain\\eCommerce.Domain.csproj",
+        "packagesPath": "C:\\Users\\edumind\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\edumind\\Source\\Repos\\edumindSE\\eCommerce.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\edumind24\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\edumind\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,7 +105,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -115,7 +122,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -136,7 +144,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
